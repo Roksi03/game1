@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private GameObject square;
+    private Vector3 scaleChange, positionChange;
+    private Vector3 initialScale;
+
     void Start()
     {
-        
+        initialScale = transform.localScale;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            square.transform.localScale = new Vector3(0.5f, 3f, 1);
+        }
         
+        if (Input.GetKeyUp(KeyCode.R))
+        {
+            square.transform.localScale = new Vector3(3f, 0.5f, 1);
+        }
     }
+
 }
