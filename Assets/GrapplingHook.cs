@@ -7,8 +7,10 @@ public class GrapplingHook : MonoBehaviour
     [SerializeField] private float grappleLength;
     [SerializeField] private LayerMask grappleLayer;
 
-    private Vector3 grapplePoint;
+    private Vector3 webPosition;
     private DistanceJoint2D joint;
+    private Vector2 square;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,16 +24,16 @@ public class GrapplingHook : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             RaycastHit2D hit = Physics2D.Raycast(
-            origin: Camera.main.ScreenToWorldPoint(Input.mousePosition),
+            origin: webPosition,
             direction: Vector2.zero,
             distance: Mathf.Infinity,
             layerMask: grappleLayer);
 
             if (hit.collider != null)
             {
-                grapplePoint = hit.point;
-                grapplePoint.z = 0;
-                joint.connectedAnchor = grapplePoint;
+                webPosition = hit.point;
+                webPosition.z = 0;
+                joint.connectedAnchor = webPosition;
                 joint.enabled = true;
                 joint.distance = grappleLength;
             }
