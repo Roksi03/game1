@@ -5,13 +5,16 @@ using UnityEngine;
 public class collision : MonoBehaviour
 
 {
+    [SerializeField] private GameObject spider;
     public GameObject Square;
+    private Vector3 squarePosition;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Square")
-        {
-            gameObject.GetComponent<GrapplingHook>().enabled = true;
+        if (collision.tag == "ground")
+            {
+            spider.transform.position = squarePosition;
         }
     }
     // Start is called before the first frame update
