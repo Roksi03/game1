@@ -113,12 +113,12 @@ TextureImporter:
       name: flag_spritesheet (1)_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 18
-        width: 234
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 300
+        height: 300
+      alignment: 9
+      pivot: {x: 0.50000006, y: 0.49999994}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: flag_spritesheet (1)_1
       rect:
         serializedVersion: 2
-        x: 338
-        y: 18
-        width: 229
-        height: 264
+        x: 300
+        y: 0
+        width: 300
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: flag_spritesheet (1)_2
       rect:
         serializedVersion: 2
-        x: 646
-        y: 18
-        width: 221
-        height: 264
+        x: 600
+        y: 0
+        width: 300
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: flag_spritesheet (1)_3
       rect:
         serializedVersion: 2
-        x: 943
-        y: 18
-        width: 224
-        height: 264
+        x: 900
+        y: 0
+        width: 300
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: flag_spritesheet (1)_4
       rect:
         serializedVersion: 2
-        x: 1233
-        y: 18
-        width: 234
-        height: 264
+        x: 1200
+        y: 0
+        width: 300
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,7 +217,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b30e4dd88da7d6340bdc44dd4ab342a2
     internalID: 0
     vertices: []
     indices: 
