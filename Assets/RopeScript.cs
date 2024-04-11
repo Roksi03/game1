@@ -11,11 +11,18 @@ public class RopeScript : MonoBehaviour
     public GameObject NodePrefab;
     public GameObject player;
     public GameObject lastNode;
-    bool done=false;
+    public LineRenderer lr;
+    int vertexCount = 2;
+    public List<GameObject> Nodes = new List<GameObject>();
+    bool done = false;
     // Start is called before the first frame update
     void Start()
     {
+        lr = GetComponent<LineRenderer>();
+        player = GameObject.FindGameObjectWithTag("Player");
         lastNode = transform.gameObject;
+
+        Nodes.Add(transform.gameObject);
     }
 
     // Update is called once per frame
@@ -31,11 +38,31 @@ public class RopeScript : MonoBehaviour
             }
         }
 
-        else if(done == false)
+        else if (done == false)
         {
+
+            if(Vector2.Distance(player.transform.position, lastNode.transform.position) > distance)
+            {
+                CreateNode();
+            }
+
             done = true;
             lastNode.GetComponent<HingeJoint2D>().connectedBody = player.GetComponent<Rigidbody2D>();
         }
+        RenderLine();
+    }
+    
+    
+
+    void RenderLine()
+    {
+        lr.positionCount = vertexCount;
+        int i;
+        for ( i = 0; i < Nodes.Count; i++)
+        {
+            lr.SetPosition(i, Nodes[i].transform.position);
+        }
+        lr.SetPosition(Nodes.Count - 1,player.transform.position);
     }
 
     void CreateNode()
@@ -51,5 +78,9 @@ public class RopeScript : MonoBehaviour
 
         lastNode.GetComponent<HingeJoint2D>().connectedBody = go.GetComponent<Rigidbody2D>();
         lastNode = go;
+
+        Nodes.Add(lastNode);
+
+        vertexCount++;
     }
 }
