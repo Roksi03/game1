@@ -1876,19 +1876,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &2128437901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128437888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94d5f23badc37444b949acdd162a5792, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!1001 &2047769971304773096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2918,9 +2905,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6204645339509358090, guid: a649f25904be72d418f8f5c46a0bd0dd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2128437900}
-    - targetCorrespondingSourceObject: {fileID: 6204645339509358090, guid: a649f25904be72d418f8f5c46a0bd0dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2128437901}
   m_SourcePrefab: {fileID: 100100000, guid: a649f25904be72d418f8f5c46a0bd0dd, type: 3}
 --- !u!1001 &8321501203043511788
 PrefabInstance:
