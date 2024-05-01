@@ -1458,7 +1458,7 @@ GameObject:
   - component: {fileID: 1334038733}
   m_Layer: 0
   m_Name: ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1926,6 +1926,27 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &2128437901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128437888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062c16cb2a2566343b731efaf1d34b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  jump: 300
+  rb: {fileID: 2128437904}
+  isJumping: 0
+--- !u!50 &2128437904 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1293623396211506949, guid: a649f25904be72d418f8f5c46a0bd0dd, type: 3}
+  m_PrefabInstance: {fileID: 7964442238550774509}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2047769971304773096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2961,6 +2982,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6204645339509358090, guid: a649f25904be72d418f8f5c46a0bd0dd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2128437900}
+    - targetCorrespondingSourceObject: {fileID: 6204645339509358090, guid: a649f25904be72d418f8f5c46a0bd0dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2128437901}
   m_SourcePrefab: {fileID: 100100000, guid: a649f25904be72d418f8f5c46a0bd0dd, type: 3}
 --- !u!1001 &8321501203043511788
 PrefabInstance:
