@@ -19,22 +19,22 @@ public class webarVIktor : MonoBehaviour
 
     private void Update()
     {
-        webText.text = "Web" + web + "%";
-        if (web > maxWeb) web = maxWeb;
+        webText.text = "Web" + web + "%"; // odnoœnik do tekstu w scenie i ustawienie pokazywania procentów
+        if (web > maxWeb) web = maxWeb; // jeœli poziom sieci jest wiêkszy od maksymalnego to ustaw na maksymalny a nie wy¿ej
 
-        lerpSpeed = 3f * Time.deltaTime;
+        lerpSpeed = 3f * Time.deltaTime; // ustawienie p³ynnoœci zmiany paska sieci
 
         WebBarFiller();
-        ColorChanger();
+        ColorChanger(); // zmiana koloru paska
 
         if (Input.GetMouseButtonDown(0))
         {
-            // Decrease health on mouse click
-            web -= 10f;
-            if (web <= 0f)
+            // jeœli zostanie przyciœniêty lewy przycisk myszy to:
+            web -= 10f; // zmniejsz poziom sieci o 10
+            if (web <= 0f) // jeœli poziom sieci jest ni¿szy ni¿ 0 to:
             {
                 web = 0f;
-                // Player is dead, you can handle this here
+                // ustaw poziom sieci na 0
             }
         }
 
