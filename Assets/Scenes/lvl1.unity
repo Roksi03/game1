@@ -1608,19 +1608,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &848897944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848897937}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 880ffde9b01375d47864c6d8b2c052df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  web: 10
 --- !u!1 &1016285543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 555396903715381430, guid: 450bf3a5ab1547a48973c69b405b85d5, type: 3}
@@ -2219,7 +2206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1982275399
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2644,7 +2631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4523998708309363303, guid: 012d45d35aef5d343a6122aab424a3c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.02
+      value: -0.57
       objectReference: {fileID: 0}
     - target: {fileID: 4523998708309363303, guid: 012d45d35aef5d343a6122aab424a3c6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2702,9 +2689,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5804762324831365540, guid: 012d45d35aef5d343a6122aab424a3c6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 848897943}
-    - targetCorrespondingSourceObject: {fileID: 5804762324831365540, guid: 012d45d35aef5d343a6122aab424a3c6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 848897944}
   m_SourcePrefab: {fileID: 100100000, guid: 012d45d35aef5d343a6122aab424a3c6, type: 3}
 --- !u!1001 &7964442238550774509
 PrefabInstance:
@@ -3421,6 +3405,10 @@ PrefabInstance:
     - target: {fileID: 264315751726693216, guid: a649f25904be72d418f8f5c46a0bd0dd, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293623396211506949, guid: a649f25904be72d418f8f5c46a0bd0dd, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1740747398231116543, guid: a649f25904be72d418f8f5c46a0bd0dd, type: 3}
       propertyPath: m_LocalPosition.x

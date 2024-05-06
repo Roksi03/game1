@@ -26,6 +26,22 @@ public class webarVIktor : MonoBehaviour
 
         WebBarFiller();
         ColorChanger();
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            // Decrease health on mouse click
+            web -= 10f;
+            if (web <= 0f)
+            {
+                web = 0f;
+                // Player is dead, you can handle this here
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            web += 10f;
+        }
     }
 
     void WebBarFiller()
@@ -46,4 +62,12 @@ public class webarVIktor : MonoBehaviour
             web -= webPoints;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("fly"))
+        {
+            // Destroy the player when it collides with a fly
+            Destroy(gameObject); // Destroy the player GameObject
+        }
+    }
 }
