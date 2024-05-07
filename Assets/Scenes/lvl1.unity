@@ -670,7 +670,7 @@ GameObject:
   - component: {fileID: 537307405}
   - component: {fileID: 537307404}
   - component: {fileID: 537307403}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -935,7 +935,7 @@ GameObject:
   - component: {fileID: 612302749}
   - component: {fileID: 612302748}
   - component: {fileID: 612302747}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1837,7 +1837,7 @@ GameObject:
   - component: {fileID: 1334038732}
   - component: {fileID: 1334038731}
   - component: {fileID: 1334038733}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2161,7 +2161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1917340448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: webStart
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -3343,6 +3343,10 @@ PrefabInstance:
     - target: {fileID: 6204645339509358090, guid: a649f25904be72d418f8f5c46a0bd0dd, type: 3}
       propertyPath: m_Name
       value: spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204645339509358090, guid: a649f25904be72d418f8f5c46a0bd0dd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6566570866233747590, guid: a649f25904be72d418f8f5c46a0bd0dd, type: 3}
       propertyPath: m_IsTrigger

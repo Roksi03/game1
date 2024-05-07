@@ -1,0 +1,912 @@
+fileFormatVersion: 2
+guid: 601acd0eae06c2c4eb14d7cdb78c912d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3220236588330217322
+    second: spider_arms_idle_animation_0
+  - first:
+      213: -4627358977396256963
+    second: spider_arms_idle_animation_1
+  - first:
+      213: -6207954566096667338
+    second: spider_arms_idle_animation_2
+  - first:
+      213: -3946862201667390826
+    second: spider_arms_idle_animation_3
+  - first:
+      213: 3211259212824309165
+    second: spider_arms_idle_animation_4
+  - first:
+      213: -4899708596235966541
+    second: spider_arms_idle_animation_5
+  - first:
+      213: 3960057878179909851
+    second: spider_arms_idle_animation_6
+  - first:
+      213: -4911575032565338091
+    second: spider_arms_idle_animation_7
+  - first:
+      213: -4310656848648755350
+    second: spider_arms_idle_animation_8
+  - first:
+      213: 5257726338445273417
+    second: spider_arms_idle_animation_9
+  - first:
+      213: -9151758227525497636
+    second: spider_arms_idle_animation_10
+  - first:
+      213: 1512930513397175418
+    second: spider_arms_idle_animation_11
+  - first:
+      213: 2793817571932611389
+    second: spider_arms_idle_animation_12
+  - first:
+      213: -4250702269446723671
+    second: spider_arms_idle_animation_13
+  - first:
+      213: -6475740569348060092
+    second: spider_arms_idle_animation_14
+  - first:
+      213: 2357537069348819854
+    second: spider_arms_idle_animation_15
+  - first:
+      213: -8540473928330137779
+    second: spider_arms_idle_animation_16
+  - first:
+      213: 3440224059169934268
+    second: spider_arms_idle_animation_17
+  - first:
+      213: 8834404804083108281
+    second: spider_arms_idle_animation_18
+  - first:
+      213: -5984846695359333068
+    second: spider_arms_idle_animation_19
+  - first:
+      213: 4035630431477464578
+    second: spider_arms_idle_animation_20
+  - first:
+      213: 7195600112840879447
+    second: spider_arms_idle_animation_21
+  - first:
+      213: 5919830997970163829
+    second: spider_arms_idle_animation_22
+  - first:
+      213: 3938501175693702376
+    second: spider_arms_idle_animation_23
+  - first:
+      213: -1766414860281162181
+    second: spider_arms_idle_animation_24
+  - first:
+      213: 2248132467456888235
+    second: spider_arms_idle_animation_25
+  - first:
+      213: 8349890679930253279
+    second: spider_arms_idle_animation_26
+  - first:
+      213: 7264160475054243251
+    second: spider_arms_idle_animation_27
+  - first:
+      213: 7454880162298112916
+    second: spider_arms_idle_animation_28
+  - first:
+      213: 1596580058231750924
+    second: spider_arms_idle_animation_29
+  - first:
+      213: -7994657131916855940
+    second: spider_arms_idle_animation_30
+  - first:
+      213: 1504330033736592524
+    second: spider_arms_idle_animation_31
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 213
+        width: 137
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6909cdb62eb6f43d0800000000000000
+      internalID: -3220236588330217322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_1
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 214
+        width: 137
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3fc410e68158cfb0800000000000000
+      internalID: -4627358977396256963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_2
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 204
+        width: 135
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d3b0a963ae8d9a0800000000000000
+      internalID: -6207954566096667338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_3
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 204
+        width: 135
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 692f23c2dbde939c0800000000000000
+      internalID: -3946862201667390826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_4
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 190
+        width: 127
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dade7167d3fa09c20800000000000000
+      internalID: 3211259212824309165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_5
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 190
+        width: 127
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b76d62ddfcb00cb0800000000000000
+      internalID: -4899708596235966541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_6
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 204
+        width: 135
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd096eea8a3f4f630800000000000000
+      internalID: 3960057878179909851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_7
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 204
+        width: 135
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510f340d78496dbb0800000000000000
+      internalID: -4911575032565338091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_8
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 175
+        width: 75
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67afab5f687d24c0800000000000000
+      internalID: -4310656848648755350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_9
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 176
+        width: 75
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 949ee398f3237f840800000000000000
+      internalID: 5257726338445273417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_10
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 165
+        width: 75
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc8512516c6ef080800000000000000
+      internalID: -9151758227525497636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_11
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 165
+        width: 75
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7453ec39420ff410800000000000000
+      internalID: 1512930513397175418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_12
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 151
+        width: 75
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33a9468742a5c620800000000000000
+      internalID: 2793817571932611389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_13
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 151
+        width: 75
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a76eaf9ec87205c0800000000000000
+      internalID: -4250702269446723671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_14
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 165
+        width: 75
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c4c6a134c8126a0800000000000000
+      internalID: -6475740569348060092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_15
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 165
+        width: 75
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e831a5b4977a7b020800000000000000
+      internalID: 2357537069348819854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_16
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 17
+        width: 100
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4fa56826342a7980800000000000000
+      internalID: -8540473928330137779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_17
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 119
+        width: 71
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb83920e812ebf20800000000000000
+      internalID: 3440224059169934268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_18
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 18
+        width: 100
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9c065dc5c1a9a70800000000000000
+      internalID: 8834404804083108281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_19
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 120
+        width: 71
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43dbfefb3ad81fca0800000000000000
+      internalID: -5984846695359333068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_20
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 18
+        width: 99
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e78f8ee70710830800000000000000
+      internalID: 4035630431477464578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_21
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 109
+        width: 71
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d24afbd28ebd360800000000000000
+      internalID: 7195600112840879447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_22
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 18
+        width: 99
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5789b549de6772250800000000000000
+      internalID: 5919830997970163829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_23
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 109
+        width: 71
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e47ea4c3fd58a630800000000000000
+      internalID: 3938501175693702376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_24
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 95
+        width: 71
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3658fe1b0f6c77e0800000000000000
+      internalID: -1766414860281162181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_25
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 95
+        width: 71
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad4aca6198f23f10800000000000000
+      internalID: 2248132467456888235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_26
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 18
+        width: 99
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf66927555c0e370800000000000000
+      internalID: 8349890679930253279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_27
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 109
+        width: 71
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd7a03077b7fc460800000000000000
+      internalID: 7264160475054243251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_28
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 18
+        width: 99
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ba2ec820e057760800000000000000
+      internalID: 7454880162298112916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_29
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 109
+        width: 71
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01406a9a11382610800000000000000
+      internalID: 1596580058231750924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_30
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 18
+        width: 97
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c757d0f22b54d0190800000000000000
+      internalID: -7994657131916855940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider_arms_idle_animation_31
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 18
+        width: 97
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c22d5023470e410800000000000000
+      internalID: 1504330033736592524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      spider_arms_idle_animation_0: -3220236588330217322
+      spider_arms_idle_animation_1: -4627358977396256963
+      spider_arms_idle_animation_10: -9151758227525497636
+      spider_arms_idle_animation_11: 1512930513397175418
+      spider_arms_idle_animation_12: 2793817571932611389
+      spider_arms_idle_animation_13: -4250702269446723671
+      spider_arms_idle_animation_14: -6475740569348060092
+      spider_arms_idle_animation_15: 2357537069348819854
+      spider_arms_idle_animation_16: -8540473928330137779
+      spider_arms_idle_animation_17: 3440224059169934268
+      spider_arms_idle_animation_18: 8834404804083108281
+      spider_arms_idle_animation_19: -5984846695359333068
+      spider_arms_idle_animation_2: -6207954566096667338
+      spider_arms_idle_animation_20: 4035630431477464578
+      spider_arms_idle_animation_21: 7195600112840879447
+      spider_arms_idle_animation_22: 5919830997970163829
+      spider_arms_idle_animation_23: 3938501175693702376
+      spider_arms_idle_animation_24: -1766414860281162181
+      spider_arms_idle_animation_25: 2248132467456888235
+      spider_arms_idle_animation_26: 8349890679930253279
+      spider_arms_idle_animation_27: 7264160475054243251
+      spider_arms_idle_animation_28: 7454880162298112916
+      spider_arms_idle_animation_29: 1596580058231750924
+      spider_arms_idle_animation_3: -3946862201667390826
+      spider_arms_idle_animation_30: -7994657131916855940
+      spider_arms_idle_animation_31: 1504330033736592524
+      spider_arms_idle_animation_4: 3211259212824309165
+      spider_arms_idle_animation_5: -4899708596235966541
+      spider_arms_idle_animation_6: 3960057878179909851
+      spider_arms_idle_animation_7: -4911575032565338091
+      spider_arms_idle_animation_8: -4310656848648755350
+      spider_arms_idle_animation_9: 5257726338445273417
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

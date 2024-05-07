@@ -200,7 +200,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spider_body_idle_animation_0: 6155811303043443458
+      spider_body_idle_animation_1: 4381723246419275273
+      spider_body_idle_animation_2: 4757626249951989748
+      spider_body_idle_animation_3: -4991035680666222094
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

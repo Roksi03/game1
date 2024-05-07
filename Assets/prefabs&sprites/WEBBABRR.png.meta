@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 8d6867266663276449abea1c30bdee47
+guid: 318b71e4a55a2264589b4664a9e637c9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8969881062689268690
-    second: throw_web_0
-  - first:
-      213: 8668890129407593812
-    second: throw_web_1
-  - first:
-      213: -4524081487177135335
-    second: throw_web_2
+      213: -5150079947278518189
+    second: WEBBABRR_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -104,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: throw_web_0
+      name: WEBBABRR_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2
-        width: 134
-        height: 63
+        x: 43
+        y: 53
+        width: 896
+        height: 896
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,50 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2c17eca2b4948380800000000000000
-      internalID: -8969881062689268690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: throw_web_1
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 63
-        width: 18
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 45dca3894a51e4870800000000000000
-      internalID: 8668890129407593812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: throw_web_2
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 0
-        width: 23
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91bc2e56bdb3731c0800000000000000
-      internalID: -4524081487177135335
+      spriteID: 358f991039d3788b0800000000000000
+      internalID: -5150079947278518189
       vertices: []
       indices: 
       edges: []
@@ -176,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WEBBABRR_0: -5150079947278518189
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
