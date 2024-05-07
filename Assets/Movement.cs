@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.angularDrag = 1.0f; // Dodaj opór obrotowy dla lepszego zachowania siê ko³a
+        rb.angularDrag = 1.0f; //  opór obrotowy dla lepszego zachowania siê ko³a
     }
 
     void FixedUpdate()
