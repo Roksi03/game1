@@ -19,7 +19,7 @@ public class webarVIktor : MonoBehaviour
 
     private void Update()
     {
-        webText.text = "Web" + web + "%"; // odnoœnik do tekstu w scenie i ustawienie pokazywania procentów
+        // webText.text = "Web" + web + "%"; // odnoœnik do tekstu w scenie i ustawienie pokazywania procentów
         if (web > maxWeb) web = maxWeb; // jeœli poziom sieci jest wiêkszy od maksymalnego to ustaw na maksymalny a nie wy¿ej
 
         lerpSpeed = 3f * Time.deltaTime; // ustawienie p³ynnoœci zmiany paska sieci
