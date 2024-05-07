@@ -2892,6 +2892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   web: 100
   maxWeb: 100
+  webBar: {fileID: 659183143}
   webText: {fileID: 1046047039}
 --- !u!1001 &7890659808886816216
 PrefabInstance:
