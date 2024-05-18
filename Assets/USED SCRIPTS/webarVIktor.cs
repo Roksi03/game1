@@ -30,7 +30,7 @@ public class webarVIktor : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             // jeœli zostanie przyciœniêty lewy przycisk myszy to:
-            web -= 10f; // zmniejsz poziom sieci o 10
+            web -= 20f; // zmniejsz poziom sieci o 10
             if (web <= 0f) // jeœli poziom sieci jest ni¿szy ni¿ 0 to:
             {
                 web = 0f;

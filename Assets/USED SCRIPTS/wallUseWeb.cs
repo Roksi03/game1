@@ -37,13 +37,27 @@ public class wallUseWeb : MonoBehaviour
     {
         if (collision.tag == "wall")
         {
-            web -= 10f; // zmniejsz poziom sieci o 10
+            web -= 20f; // zmniejsz poziom sieci o 10
             if (web <= 0f) // jeœli poziom sieci jest ni¿szy ni¿ 0 to:
             {
                 web = 0f;
             }
 
             Debug.Log("test");
+
+            webText.text = "Web" + web + "%"; // odnoœnik do tekstu w scenie i ustawienie pokazywania procentów
+            if (web > maxWeb) web = maxWeb;
+        }
+
+        if (collision.tag == "ceiling")
+        {
+            web -= 20f; // zmniejsz poziom sieci o 10
+            if (web <= 0f) // jeœli poziom sieci jest ni¿szy ni¿ 0 to:
+            {
+                web = 0f;
+            }
+
+            Debug.Log("test_ceiling");
 
             webText.text = "Web" + web + "%"; // odnoœnik do tekstu w scenie i ustawienie pokazywania procentów
             if (web > maxWeb) web = maxWeb;

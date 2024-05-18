@@ -17,6 +17,7 @@ public class wallMovement : MonoBehaviour
     {
         vertical = Input.GetAxis("Vertical");
 
+
         if (isWall && Mathf.Abs(vertical) > 0f)
         {
             isClimbing = true;
@@ -42,6 +43,12 @@ public class wallMovement : MonoBehaviour
         {
             isWall = true;
         }
+
+        if (collision.CompareTag("ceiling"))
+        {
+            rb.gravityScale = 0;
+            isWall = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -50,6 +57,12 @@ public class wallMovement : MonoBehaviour
         {
             isWall = false;
             isClimbing = false;
-        }   
+        }
+
+        if (collision.CompareTag("ceiling"))
+        {
+            isWall = false;
+            isClimbing = false;
+        }
     }
 }

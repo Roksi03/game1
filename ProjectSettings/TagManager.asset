@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - fly
   - wall
+  - ceiling
   layers:
   - Default
   - TransparentFX
@@ -49,4 +50,7 @@ TagManager:
     locked: 0
   - name: player
     uniqueID: 2298974731
+    locked: 0
+  - name: webbar
+    uniqueID: 3963309167
     locked: 0
