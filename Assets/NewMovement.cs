@@ -7,6 +7,9 @@ public class NewMovement : MonoBehaviour
     public float moveSpeed = 5f; // Szybkoœæ poruszania siê gracza
     private Rigidbody2D rb;
     private bool canMoveSideways = true; // Czy gracz mo¿e siê poruszaæ w bok?
+    private bool isRotating = false; // Flaga informuj¹ca, czy gracz w³aœnie siê obraca
+    private float rotationCooldown = 0.5f; // Czas trwania cooldownu po obrocie
+    private float lastRotationTime = -1f; // Czas ostatniego obrotu
 
     void Start()
     {
@@ -15,6 +18,11 @@ public class NewMovement : MonoBehaviour
 
     void Update()
     {
+        if (Time.time - lastRotationTime < rotationCooldown)
+        {
+            return; // Jeœli nadal jesteœmy w czasie cooldownu, wyjdŸ z Update
+        }
+
         if (canMoveSideways)
         {
             // Ruch w prawo
@@ -43,33 +51,36 @@ public class NewMovement : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        // Jeœli gracz dotyka obiektu o tagu "wall1"
+        if (Time.time - lastRotationTime < rotationCooldown)
+        {
+            return; // Jeœli nadal jesteœmy w czasie cooldownu, wyjdŸ z metody
+        }
+
         if (other.CompareTag("wall1"))
         {
-            // Obróæ gracza o 90 stopni w lewo
-            transform.Rotate(Vector3.forward * -90f);
-            rb.simulated = false;
-            canMoveSideways = false; // Wy³¹cz mo¿liwoœæ ruchu w bok
+            RotatePlayer(-90f, false);
         }
-        if (other.CompareTag("wall2"))
+        else if (other.CompareTag("wall2"))
         {
-            
-            transform.Rotate(Vector3.forward * 90);
-            rb.simulated = false;
-            canMoveSideways = true; // 
-            
+            RotatePlayer(-90f, true);
         }
-        if (other.CompareTag("wall3"))
+        else if (other.CompareTag("wall3"))
         {
-            // Obróæ gracza o 90 stopni w lewo
-            transform.Rotate(Vector3.forward * -90);
-            rb.simulated = false;
-            canMoveSideways = false; // Wy³¹cz mo¿liwoœæ ruchu w bok
+            RotatePlayer(-90f, false);
+        }
+        else if (other.CompareTag("ground"))
+        {
+            RotatePlayer(-90f, true);
         }
     }
-}
 
-    
+    private void RotatePlayer(float angle, bool enableSideways)
+    {
+        transform.Rotate(Vector3.forward * angle);
+        canMoveSideways = enableSideways;
+        lastRotationTime = Time.time; // Ustaw czas ostatniego obrotu
+    }
+}
 
 
 
