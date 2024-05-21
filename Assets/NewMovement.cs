@@ -54,15 +54,15 @@ public class NewMovement : MonoBehaviour
         if (other.CompareTag("wall2"))
         {
             
-            transform.Rotate(Vector3.forward * -180f);
+            transform.Rotate(Vector3.forward * 90);
             rb.simulated = false;
             canMoveSideways = true; // 
-            Debug.Log("dwdw");
+            
         }
         if (other.CompareTag("wall3"))
         {
             // Obróæ gracza o 90 stopni w lewo
-            transform.Rotate(Vector3.forward * 90f);
+            transform.Rotate(Vector3.forward * -90);
             rb.simulated = false;
             canMoveSideways = false; // Wy³¹cz mo¿liwoœæ ruchu w bok
         }
