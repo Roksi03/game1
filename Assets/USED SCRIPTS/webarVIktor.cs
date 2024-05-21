@@ -8,66 +8,69 @@ public class webarVIktor : MonoBehaviour
 {
     public Image webBar;
     public TextMeshProUGUI webText;
-    float lerpSpeed;
+    float lerpSpeed = 3f;
 
     float web, maxWeb = 100;
 
     private void Start()
     {
         web = maxWeb;
+        UpdateWebUI();
     }
 
     private void Update()
     {
-        webText.text = "Web" + web + "%"; // odnoœnik do tekstu w scenie i ustawienie pokazywania procentów
-        if (web > maxWeb) web = maxWeb; // jeœli poziom sieci jest wiêkszy od maksymalnego to ustaw na maksymalny a nie wy¿ej
-
-        lerpSpeed = 3f * Time.deltaTime; // ustawienie p³ynnoœci zmiany paska sieci
-
-        WebBarFiller();
-        ColorChanger(); // zmiana koloru paska
+        if (web > maxWeb) web = maxWeb; // Upewnij siê, ¿e poziom sieci nie przekroczy maksymalnego
 
         if (Input.GetMouseButtonDown(0))
         {
-            // jeœli zostanie przyciœniêty lewy przycisk myszy to:
-            web -= 10f; // zmniejsz poziom sieci o 10
-            if (web <= 0f) // jeœli poziom sieci jest ni¿szy ni¿ 0 to:
-            {
-                web = 0f;
-                // ustaw poziom sieci na 0
-            }
+            // Zmniejsz poziom sieci o 10 po klikniêciu lewego przycisku myszy
+            web -= 10f;
+            if (web < 0f) web = 0f; // Ustaw poziom sieci na 0, jeœli spadnie poni¿ej
+            UpdateWebUI();
         }
 
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            web += 10f;
-        }
+        WebBarFiller();
+        ColorChanger(); // Zmiana koloru paska
     }
 
     void WebBarFiller()
     {
-        webBar.fillAmount = Mathf.Lerp(webBar.fillAmount, web / maxWeb, lerpSpeed);
+        webBar.fillAmount = Mathf.Lerp(webBar.fillAmount, web / maxWeb, lerpSpeed * Time.deltaTime);
     }
 
     void ColorChanger()
     {
-        Color webColor = Color.Lerp(Color.red, Color.white, (web / maxWeb));
-
+        Color webColor = Color.Lerp(Color.red, Color.white, web / maxWeb);
         webBar.color = webColor;
+    }
+
+    void UpdateWebUI()
+    {
+        webText.text = "Web " + web + "%";
+        WebBarFiller();
+        ColorChanger();
     }
 
     public void WebUse(float webPoints)
     {
         if (web > 0)
+        {
             web -= webPoints;
+            if (web < 0) web = 0;
+            UpdateWebUI();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("fly"))
         {
-            // Destroy the player when it collides with a fly
-            Destroy(gameObject); // Destroy the player GameObject
+            web += 10f;
+            UpdateWebUI();
+            if (web > maxWeb) web = maxWeb; // Upewnij siê, ¿e poziom sieci nie przekroczy maksymalnego
+            Destroy(other.gameObject); // Zniszcz obiekt "fly" po kolizji
+             // Zaktualizuj UI po zmianie poziomu sieci
         }
     }
 }
