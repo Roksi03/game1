@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8638841559320791598}
   m_Layer: 0
   m_Name: throw_web_0
-  m_TagString: Untagged
+  m_TagString: throwWeb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
