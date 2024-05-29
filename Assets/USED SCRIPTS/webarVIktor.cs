@@ -38,10 +38,7 @@ public class webarVIktor : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            web += 10f;
-        }
+       
     }
 
     void WebBarFiller()
@@ -66,6 +63,7 @@ public class webarVIktor : MonoBehaviour
     {
         if (other.CompareTag("fly"))
         {
+            web += 10f;
             // Destroy the player when it collides with a fly
             Destroy(gameObject); // Destroy the player GameObject
         }

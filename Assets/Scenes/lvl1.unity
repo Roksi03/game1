@@ -924,11 +924,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0194c81b03f7e6c4d89eb23ec8e0dc4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  webBar: {fileID: 659183143}
+  webText: {fileID: 1046047039}
   crosshairs: {fileID: 1418272925}
   player: {fileID: 2128437888}
   webPrefab: {fileID: 4786323721332164790, guid: b7383ba44b38cfd4eaab956c03101b1c, type: 3}
   webStart: {fileID: 1917340447}
   webSpeed: 60
+  maxWeb: 100
+  webUsagePerShot: 10
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -936,7 +940,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84f9580d3a1256e42afe1f41a9ede111, type: 3}
   m_Name: 
@@ -1653,7 +1657,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2245,7 +2249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 848897938}
---- !u!58 &848897947
+--- !u!58 &848897950
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3897,7 +3901,7 @@ PrefabInstance:
       addedObject: {fileID: 848897943}
     - targetCorrespondingSourceObject: {fileID: 5804762324831365540, guid: 012d45d35aef5d343a6122aab424a3c6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 848897947}
+      addedObject: {fileID: 848897950}
   m_SourcePrefab: {fileID: 100100000, guid: 012d45d35aef5d343a6122aab424a3c6, type: 3}
 --- !u!1001 &7964442238550774509
 PrefabInstance:
