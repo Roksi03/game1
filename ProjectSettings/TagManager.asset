@@ -9,6 +9,9 @@ TagManager:
   - wall
   - ceiling
   - throwWeb
+  - wall1
+  - wall3
+  - wall4
   layers:
   - Default
   - TransparentFX
