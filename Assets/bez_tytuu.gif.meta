@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bez_tytuu_0: 2658842821628721634
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
