@@ -74,7 +74,7 @@ public class PointAndShoot : MonoBehaviour
         if (other.CompareTag("fly"))
         {
             IncreaseWeb(10f);
-            Destroy(other.gameObject); // Destroy the fly object
+            // Destroy the fly object
         }
     }
 
@@ -96,8 +96,7 @@ public class Web : MonoBehaviour
         {
             pointAndShoot.IncreaseWeb(20f);
             
-            Destroy(other.gameObject);
-            Destroy(gameObject); // Destroy the web object
+           
         }
     }
 }
