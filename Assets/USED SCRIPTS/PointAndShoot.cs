@@ -69,15 +69,6 @@ public class PointAndShoot : MonoBehaviour
         web -= webUsagePerShot;
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("fly"))
-        {
-            IncreaseWeb(10f);
-            // Destroy the fly object
-        }
-    }
-
     public void IncreaseWeb(float amount)
     {
         web += amount;
@@ -89,14 +80,4 @@ public class PointAndShoot : MonoBehaviour
 public class Web : MonoBehaviour
 {
     public PointAndShoot pointAndShoot;
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("fly"))
-        {
-            pointAndShoot.IncreaseWeb(20f);
-            
-           
-        }
-    }
 }

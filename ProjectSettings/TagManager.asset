@@ -13,6 +13,7 @@ TagManager:
   - wall3
   - wall4
   - ceilingCollider
+  - fly2
   layers:
   - Default
   - TransparentFX
