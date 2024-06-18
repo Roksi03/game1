@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class startcollision : MonoBehaviour
 {
 
-
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("wdjknwaj");
         if (collision.CompareTag("throwWeb"))
         {
             SceneManager.LoadScene("tutorial1");
