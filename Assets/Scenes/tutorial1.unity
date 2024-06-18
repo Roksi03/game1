@@ -1964,8 +1964,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   web: 100
   maxWeb: 100
-  webBar: {fileID: 0}
-  webText: {fileID: 0}
+  webBar: {fileID: 1339999912}
+  webText: {fileID: 1931762697}
 --- !u!114 &1916093014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2188,7 +2188,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1931762696
 RectTransform:
   m_ObjectHideFlags: 0
