@@ -31,7 +31,7 @@ public class buttonScript : MonoBehaviour
         {
             goesUp = false;
             // Stop the animation in the wall Animator
-            wallAnimator.SetBool("goesUp", false);
+            wallAnimator.SetBool("goesDown", true);
         }
     }
 }
