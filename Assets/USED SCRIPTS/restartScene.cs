@@ -10,8 +10,8 @@ public class restartScene : MonoBehaviour
         // Check if the Escape key is pressed
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            // Reload the current scene
-            SceneManager.LoadScene("lvl2");
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(currentSceneName);
         }
     }
 }
