@@ -6,9 +6,16 @@ TagManager:
   tags:
   - Ground
   - fly
+  - wall
+  - ceiling
+  - throwWeb
   - wall1
-  - wall2
   - wall3
+  - wall4
+  - ceilingCollider
+  - fly2
+  - Square
+  - Audio
   layers:
   - Default
   - TransparentFX
@@ -51,4 +58,7 @@ TagManager:
     locked: 0
   - name: player
     uniqueID: 2298974731
+    locked: 0
+  - name: webbar
+    uniqueID: 3963309167
     locked: 0
