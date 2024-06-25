@@ -41,7 +41,7 @@ public class NewMovement : MonoBehaviour
             rb.velocity = Vector2.zero;
             
             canMoveBackwards = false;
-            rb.isKinematic = true; // Wyłącz możliwość ruchu w bok
+            rb.isKinematic = true;
         }
         // Jeśli gracz dotknie innej ściany
         else if (other.CompareTag("wall2"))
