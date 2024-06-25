@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1240229178550146421}
   - component: {fileID: 814370198049443213}
   - component: {fileID: -8638841559320791598}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: throw_web_0
   m_TagString: throwWeb
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8998517689783454108}
   - component: {fileID: 3532105264893147773}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: webSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
