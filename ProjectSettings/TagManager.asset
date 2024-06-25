@@ -16,6 +16,8 @@ TagManager:
   - fly2
   - Square
   - Audio
+  - wall2
+  - Wall
   layers:
   - Default
   - TransparentFX

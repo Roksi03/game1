@@ -6,90 +6,76 @@ public class NewMovement : MonoBehaviour
 {
     public float moveSpeed = 5f; // Szybkość poruszania się gracza
     private Rigidbody2D rb;
-    private bool canMoveSideways = true; // Czy gracz może się poruszać w bok?
-    private bool canMoveUpDown = true; // Czy gracz może się poruszać do góry i na dół?
+    
+    private bool canMoveBackwards = true;
+   
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0; // Wyłącz grawitację
+        
     }
 
     void Update()
     {
-        Vector2 moveDirection = Vector2.zero;
-
-        if (canMoveSideways)
+        if (Input.GetKey(KeyCode.D))
         {
-            if (Input.GetKey(KeyCode.D))
-            {
-                moveDirection += Vector2.right;
-            }
-            if (Input.GetKey(KeyCode.A))
-            {
-                moveDirection += Vector2.left;
-            }
+            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
         }
 
-        if (canMoveUpDown)
+        // Ruch do tyłu
+        if (canMoveBackwards && Input.GetKey(KeyCode.A))
         {
-            if (Input.GetKey(KeyCode.W))
-            {
-                moveDirection += Vector2.up;
-            }
-            if (Input.GetKey(KeyCode.S))
-            {
-                moveDirection += Vector2.down;
-            }
-        }
-
-        rb.velocity = moveDirection.normalized * moveSpeed;
-    }
-
-    void FixedUpdate()
-    {
-        // Zablokuj ruch w osi Y, aby zapobiec opadaniu
-        if (!canMoveUpDown)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, 0);
+            transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    
+    public void OnTriggerEnter2D(Collider2D other)
     {
+        // Jeśli gracz dotyka ściany
         if (other.CompareTag("wall1"))
         {
-            transform.Rotate(Vector3.forward * -90f);
-            rb.velocity = Vector2.zero;
-            rb.simulated = true; // Zatrzymaj ruch przed obrotem
-            canMoveSideways = false; // Wyłącz możliwość ruchu w bok
-            canMoveUpDown = true; // Włącz możliwość ruchu w pionie
-        }
-        else if (other.CompareTag("ceiling"))
-        {
-            transform.Rotate(Vector3.forward * -90f);
-            rb.velocity = Vector2.zero;
-            rb.simulated = true; // Zatrzymaj ruch przed obrotem
-            canMoveSideways = true; // Włącz możliwość ruchu w bok
-            canMoveUpDown = false; // Wyłącz możliwość ruchu w pionie
-            Debug.Log("dwdw");
-        }
-        else if (other.CompareTag("wall3"))
-        {
-            transform.Rotate(Vector3.forward * -90f);
-            rb.velocity = Vector2.zero;
-            rb.simulated = true; // Zatrzymaj ruch przed obrotem
-            canMoveSideways = false; // Wyłącz możliwość ruchu w bok
-            canMoveUpDown = true; // Włącz możliwość ruchu w pionie
-        }
-
-        else if (other.CompareTag("wall4"))
-        {
+            // Obróć gracza o 90 stopni w lewo
             transform.Rotate(Vector3.forward * 90f);
             rb.velocity = Vector2.zero;
-            rb.simulated = true; // Zatrzymaj ruch przed obrotem
-            canMoveSideways = false; // Wyłącz możliwość ruchu w bok
-            canMoveUpDown = true; // Włącz możliwość ruchu w pionie
+            
+            canMoveBackwards = false;
+            rb.isKinematic = true; // Wyłącz możliwość ruchu w bok
+        }
+        // Jeśli gracz dotknie innej ściany
+        else if (other.CompareTag("wall2"))
+        {
+            // Obróć gracza o 90 stopni w prawo
+            transform.Rotate(Vector3.forward * 90f);
+            rb.simulated = false;
+             // Włącz możliwość ruchu w bok
+        }
+        // Jeśli gracz dotknie sufitu
+        else if (other.CompareTag("Ceiling"))
+        {
+            // Obróć gracza o 180 stopni wokół osi Z (do góry nogami)
+            transform.Rotate(Vector3.forward * 180f);
+            rb.simulated = false;
+             // Włącz możliwość ruchu w bok
+        }
+    }
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        Debug.Log("Exit trigger: " + other.tag);
+
+        // Jeśli gracz opuszcza kolider
+        if (other.CompareTag("wall1") || other.CompareTag("wall2"))
+        {
+            // Przywróć początkową rotację gracza
+            transform.rotation = Quaternion.identity; // Przywróć początkową rotację (brak obrotu)
+            rb.simulated = true;
+            
+            canMoveBackwards = true;
+            rb.isKinematic = false;
+            // Włącz możliwość ruchu w bok
         }
     }
 }
+
+
