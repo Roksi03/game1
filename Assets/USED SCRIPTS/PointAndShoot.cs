@@ -75,9 +75,19 @@ public class PointAndShoot : MonoBehaviour
         web = Mathf.Clamp(web, 0, maxWeb); // Ensure web does not exceed maxWeb
         UpdateWebUI();
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("fly2"))
+        {
+            web = maxWeb; // Set web to maximum value
+            UpdateWebUI();
+        }
+    }
 }
 
 public class Web : MonoBehaviour
 {
     public PointAndShoot pointAndShoot;
 }
+
+

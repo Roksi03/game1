@@ -14,6 +14,8 @@ TagManager:
   - wall4
   - ceilingCollider
   - fly2
+  - Square
+  - Audio
   layers:
   - Default
   - TransparentFX
