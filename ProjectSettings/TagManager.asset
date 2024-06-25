@@ -16,6 +16,7 @@ TagManager:
   - fly2
   - Square
   - Audio
+  - obstacle
   layers:
   - Default
   - TransparentFX
