@@ -6,76 +6,76 @@ public class NewMovement : MonoBehaviour
 {
     public float moveSpeed = 5f; // Szybkość poruszania się gracza
     private Rigidbody2D rb;
-    
-    private bool canMoveBackwards = true;
-   
+    public Collider2D triggerToDisableAtStart;
+    public Collider2D triggerToEnableAtStart;
+    public Collider2D triggerToEnableAtStart2;
+    public Collider2D triggerToDisableAtStart2;
+
+    private Quaternion initialRotation; // Początkowa rotacja gracza
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+        initialRotation = transform.rotation; // Zapamiętaj początkową rotację gracza
     }
 
     void Update()
     {
+        // Ruch do przodu (w prawo)
         if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
         }
 
-        // Ruch do tyłu
-        if (canMoveBackwards && Input.GetKey(KeyCode.A))
+        // Ruch do tyłu (w lewo)
+        if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
         }
     }
 
-    
-    public void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        // Jeśli gracz dotyka ściany
-        if (other.CompareTag("wall1"))
+        // Jeśli gracz minie trigger 2, wyłącz go i obróć postać
+        if (other == triggerToEnableAtStart)
         {
-            // Obróć gracza o 90 stopni w lewo
+            triggerToEnableAtStart.enabled = true;
             transform.Rotate(Vector3.forward * 90f);
-            rb.velocity = Vector2.zero;
-            
-            canMoveBackwards = false;
-            rb.isKinematic = true;
         }
-        // Jeśli gracz dotknie innej ściany
-        else if (other.CompareTag("wall2"))
+        // Jeśli gracz minie trigger 1, włącz go i obróć postać
+        else if (other == triggerToDisableAtStart)
         {
-            // Obróć gracza o 90 stopni w prawo
+            triggerToDisableAtStart.enabled = true;
             transform.Rotate(Vector3.forward * 90f);
-            rb.simulated = false;
-             // Włącz możliwość ruchu w bok
         }
-        // Jeśli gracz dotknie sufitu
-        else if (other.CompareTag("Ceiling"))
+        else if (other == triggerToEnableAtStart2 )
         {
-            // Obróć gracza o 180 stopni wokół osi Z (do góry nogami)
-            transform.Rotate(Vector3.forward * 180f);
-            rb.simulated = false;
-             // Włącz możliwość ruchu w bok
+            triggerToEnableAtStart2.enabled = true;
+            transform.Rotate(Vector3.forward * 90f);// Wyłącz triggerToEnableAtStart2 dopiero gdy go minie
+                                                    // Dodaj odpowiednie działania, np. obrót postaci
+        }
+        else if (other == triggerToDisableAtStart2 )
+        {
+            triggerToDisableAtStart2.enabled = true;
+            transform.Rotate(Vector3.forward * 90f);// Włącz triggerToDisableAtStart2 dopiero gdy go minie
+                                                    // Dodaj odpowiednie działania, np. obrót postaci
         }
     }
-    public void OnTriggerExit2D(Collider2D other)
-    {
-        Debug.Log("Exit trigger: " + other.tag);
 
-        // Jeśli gracz opuszcza kolider
-        if (other.CompareTag("wall1") || other.CompareTag("wall2"))
+    void OnTriggerExit2D(Collider2D other)
+    {
+        // Jeśli gracz opuszcza kolider "wall1" lub "wall1-", przywróć początkową rotację gracza
+        if (other.CompareTag("wall1") || other.CompareTag("wall1-"))
         {
-            // Przywróć początkową rotację gracza
-            transform.rotation = Quaternion.identity; // Przywróć początkową rotację (brak obrotu)
-            rb.simulated = true;
-            
-            canMoveBackwards = true;
-            rb.isKinematic = false;
-            // Włącz możliwość ruchu w bok
+            transform.rotation = initialRotation; // Przywróć początkową rotację gracza
+            rb.velocity = Vector2.zero; // Zatrzymaj prędkość gracza
         }
     }
 }
+
+
+
+
+
 
 

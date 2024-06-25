@@ -18,6 +18,9 @@ TagManager:
   - Audio
   - wall2
   - Wall
+  - wall1-
+  - ExitTrigger
+  - TurnTrigger
   layers:
   - Default
   - TransparentFX
