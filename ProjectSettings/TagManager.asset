@@ -16,7 +16,17 @@ TagManager:
   - fly2
   - Square
   - Audio
+<<<<<<< HEAD
   - obstacle
+=======
+  - wall2
+  - Wall
+  - wall1-
+  - ExitTrigger
+  - TurnTrigger
+  - wall5
+  - wall6
+>>>>>>> roksi
   layers:
   - Default
   - TransparentFX
