@@ -10,6 +10,9 @@ public class NewMovement : MonoBehaviour
     public Collider2D triggerToEnableAtStart;
     public Collider2D triggerToEnableAtStart2;
     public Collider2D triggerToDisableAtStart2;
+    public Collider2D triggerToEnableAtStart3;
+    public Collider2D triggerToDisableAtStart3;
+     private Vector2 movementDirection;
 
     private Quaternion initialRotation; // Początkowa rotacja gracza
 
@@ -48,28 +51,62 @@ public class NewMovement : MonoBehaviour
             triggerToDisableAtStart.enabled = true;
             transform.Rotate(Vector3.forward * 90f);
         }
-        else if (other == triggerToEnableAtStart2 )
+        if (other == triggerToEnableAtStart2)
         {
             triggerToEnableAtStart2.enabled = true;
             transform.Rotate(Vector3.forward * 90f);// Wyłącz triggerToEnableAtStart2 dopiero gdy go minie
                                                     // Dodaj odpowiednie działania, np. obrót postaci
         }
-        else if (other == triggerToDisableAtStart2 )
+        else if (other == triggerToDisableAtStart2)
         {
             triggerToDisableAtStart2.enabled = true;
             transform.Rotate(Vector3.forward * 90f);// Włącz triggerToDisableAtStart2 dopiero gdy go minie
                                                     // Dodaj odpowiednie działania, np. obrót postaci
         }
+
+        if (other == triggerToEnableAtStart3)
+        {
+            triggerToEnableAtStart2.enabled = true;
+            transform.Rotate(Vector3.forward * 90f);// Wyłącz triggerToEnableAtStart2 dopiero gdy go minie
+                                                    // Dodaj odpowiednie działania, np. obrót postaci
+        }
+        else if (other == triggerToDisableAtStart3)
+        {
+            triggerToDisableAtStart2.enabled = true;
+            transform.Rotate(Vector3.forward * 90f);// Włącz triggerToDisableAtStart2 dopiero gdy go minie
+                                                    // Dodaj odpowiednie działania, np. obrót postaci
+        }
+
+        if (other.CompareTag("wall4"))
+        {
+            transform.Rotate(Vector3.forward * -90f);
+
+        }
+        if (other.CompareTag("wall5"))
+        {
+            transform.Rotate(Vector3.forward * -90f);
+
+        }
+        if (other.CompareTag("wall6"))
+        {
+            transform.Rotate(Vector3.forward * -90f);
+
+        }
+
+
+
     }
+
 
     void OnTriggerExit2D(Collider2D other)
     {
-        // Jeśli gracz opuszcza kolider "wall1" lub "wall1-", przywróć początkową rotację gracza
-        if (other.CompareTag("wall1") || other.CompareTag("wall1-"))
+        // Jeśli gracz opuszcza kolider "wall1", "wall1-", "wall4" lub "wall5", przywróć początkową rotację gracza
+        if (other.CompareTag("wall1") || other.CompareTag("wall1-")) 
         {
             transform.rotation = initialRotation; // Przywróć początkową rotację gracza
             rb.velocity = Vector2.zero; // Zatrzymaj prędkość gracza
         }
+
     }
 }
 

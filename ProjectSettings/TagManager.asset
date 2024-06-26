@@ -21,6 +21,8 @@ TagManager:
   - wall1-
   - ExitTrigger
   - TurnTrigger
+  - wall5
+  - wall6
   layers:
   - Default
   - TransparentFX
