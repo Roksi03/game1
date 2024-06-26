@@ -4,25 +4,26 @@ using UnityEngine;
 
 public class leverDestroyWall : MonoBehaviour
 {
-    public GameObject obstacle; // Reference to the wall GameObject
 
     [SerializeField] private Animator animator;
+    public GameObject obstacle;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("throwWeb"))
         {
             animator.SetBool("isPulled", true);
-            DestroyWall();
+            Destroy(other.gameObject); // Optionally destroy the web after it hits the lever
+            Invoke("DestroyObstacle", 1f);
         }
 
     }
-
-    private void DestroyWall()
+    private void DestroyObstacle()
     {
         if (obstacle != null)
         {
             Destroy(obstacle);
         }
     }
+
 }
