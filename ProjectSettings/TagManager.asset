@@ -23,6 +23,7 @@ TagManager:
   - TurnTrigger
   - wall5
   - wall6
+  - lever
   layers:
   - Default
   - TransparentFX
