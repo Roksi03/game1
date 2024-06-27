@@ -38,6 +38,12 @@ public class movetutorial : MonoBehaviour
         if (other.CompareTag("wall1"))
         {
             transform.Rotate(Vector3.forward * 90f);
+            rb.gravityScale = 0;
+        }
+        if (other.CompareTag("wall2"))
+        {
+            transform.Rotate(Vector3.forward * -90f);
+            rb.gravityScale = 0;
         }
 
         else if (other.CompareTag("Ground"))
