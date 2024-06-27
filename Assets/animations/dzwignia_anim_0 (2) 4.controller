@@ -84,7 +84,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: dzwignia_anim_0 (2)
+  m_Name: dzwignia_anim_0 (2) 4
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: isPulled
