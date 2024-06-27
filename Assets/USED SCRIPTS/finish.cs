@@ -9,7 +9,7 @@ public class finish : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("lvl3");
         }
     }
 }
