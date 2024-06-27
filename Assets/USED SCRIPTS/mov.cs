@@ -35,7 +35,7 @@ public class mov : MonoBehaviour
         // Jeœli gracz minie trigger 1 i nie zosta³ jeszcze aktywowany, obróæ postaæ
         if (other.CompareTag("wall1") )
         {
-           
+            
             transform.Rotate(Vector3.forward * 90f);
         }
         // Jeœli gracz minie trigger 2 i nie zosta³ jeszcze aktywowany, obróæ postaæ
