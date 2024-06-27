@@ -6,90 +6,113 @@ public class NewMovement : MonoBehaviour
 {
     public float moveSpeed = 5f; // Szybkość poruszania się gracza
     private Rigidbody2D rb;
-    private bool canMoveSideways = true; // Czy gracz może się poruszać w bok?
-    private bool canMoveUpDown = true; // Czy gracz może się poruszać do góry i na dół?
+    public Collider2D triggerToDisableAtStart;
+    public Collider2D triggerToEnableAtStart;
+    public Collider2D triggerToEnableAtStart2;
+    public Collider2D triggerToDisableAtStart2;
+    public Collider2D triggerToEnableAtStart3;
+    public Collider2D triggerToDisableAtStart3;
+     private Vector2 movementDirection;
+
+    private Quaternion initialRotation; // Początkowa rotacja gracza
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0; // Wyłącz grawitację
+        initialRotation = transform.rotation; // Zapamiętaj początkową rotację gracza
     }
 
     void Update()
     {
-        Vector2 moveDirection = Vector2.zero;
-
-        if (canMoveSideways)
+        // Ruch do przodu (w prawo)
+        if (Input.GetKey(KeyCode.D))
         {
-            if (Input.GetKey(KeyCode.D))
-            {
-                moveDirection += Vector2.right;
-            }
-            if (Input.GetKey(KeyCode.A))
-            {
-                moveDirection += Vector2.left;
-            }
+            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
         }
 
-        if (canMoveUpDown)
+        // Ruch do tyłu (w lewo)
+        if (Input.GetKey(KeyCode.A))
         {
-            if (Input.GetKey(KeyCode.W))
-            {
-                moveDirection += Vector2.up;
-            }
-            if (Input.GetKey(KeyCode.S))
-            {
-                moveDirection += Vector2.down;
-            }
-        }
-
-        rb.velocity = moveDirection.normalized * moveSpeed;
-    }
-
-    void FixedUpdate()
-    {
-        // Zablokuj ruch w osi Y, aby zapobiec opadaniu
-        if (!canMoveUpDown)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, 0);
+            transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("wall1"))
+        // Jeśli gracz minie trigger 2, wyłącz go i obróć postać
+        if (other == triggerToEnableAtStart)
         {
-            transform.Rotate(Vector3.forward * -90f);
-            rb.velocity = Vector2.zero;
-            rb.simulated = true; // Zatrzymaj ruch przed obrotem
-            canMoveSideways = false; // Wyłącz możliwość ruchu w bok
-            canMoveUpDown = true; // Włącz możliwość ruchu w pionie
+            triggerToEnableAtStart.enabled = true;
+            transform.Rotate(Vector3.forward * 90f);
         }
-        else if (other.CompareTag("ceiling"))
+        // Jeśli gracz minie trigger 1, włącz go i obróć postać
+        else if (other == triggerToDisableAtStart)
         {
-            transform.Rotate(Vector3.forward * -90f);
-            rb.velocity = Vector2.zero;
-            rb.simulated = true; // Zatrzymaj ruch przed obrotem
-            canMoveSideways = true; // Włącz możliwość ruchu w bok
-            canMoveUpDown = false; // Wyłącz możliwość ruchu w pionie
-            Debug.Log("dwdw");
+            triggerToDisableAtStart.enabled = true;
+            transform.Rotate(Vector3.forward * 90f);
         }
-        else if (other.CompareTag("wall3"))
+        if (other == triggerToEnableAtStart2)
         {
-            transform.Rotate(Vector3.forward * -90f);
-            rb.velocity = Vector2.zero;
-            rb.simulated = true; // Zatrzymaj ruch przed obrotem
-            canMoveSideways = false; // Wyłącz możliwość ruchu w bok
-            canMoveUpDown = true; // Włącz możliwość ruchu w pionie
+            triggerToEnableAtStart2.enabled = true;
+            transform.Rotate(Vector3.forward * 90f);// Wyłącz triggerToEnableAtStart2 dopiero gdy go minie
+                                                    // Dodaj odpowiednie działania, np. obrót postaci
+        }
+        else if (other == triggerToDisableAtStart2)
+        {
+            triggerToDisableAtStart2.enabled = true;
+            transform.Rotate(Vector3.forward * 90f);// Włącz triggerToDisableAtStart2 dopiero gdy go minie
+                                                    // Dodaj odpowiednie działania, np. obrót postaci
         }
 
-        else if (other.CompareTag("wall4"))
+        if (other == triggerToEnableAtStart3)
         {
-            transform.Rotate(Vector3.forward * 90f);
-            rb.velocity = Vector2.zero;
-            rb.simulated = true; // Zatrzymaj ruch przed obrotem
-            canMoveSideways = false; // Wyłącz możliwość ruchu w bok
-            canMoveUpDown = true; // Włącz możliwość ruchu w pionie
+            triggerToEnableAtStart2.enabled = true;
+            transform.Rotate(Vector3.forward * 90f);// Wyłącz triggerToEnableAtStart2 dopiero gdy go minie
+                                                    // Dodaj odpowiednie działania, np. obrót postaci
         }
+        else if (other == triggerToDisableAtStart3)
+        {
+            triggerToDisableAtStart2.enabled = true;
+            transform.Rotate(Vector3.forward * 90f);// Włącz triggerToDisableAtStart2 dopiero gdy go minie
+                                                    // Dodaj odpowiednie działania, np. obrót postaci
+        }
+
+        if (other.CompareTag("wall4"))
+        {
+            transform.Rotate(Vector3.forward * -90f);
+
+        }
+        if (other.CompareTag("wall5"))
+        {
+            transform.Rotate(Vector3.forward * -90f);
+
+        }
+        if (other.CompareTag("wall6"))
+        {
+            transform.Rotate(Vector3.forward * -90f);
+
+        }
+
+
+
+    }
+
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        // Jeśli gracz opuszcza kolider "wall1", "wall1-", "wall4" lub "wall5", przywróć początkową rotację gracza
+        if (other.CompareTag("wall1") || other.CompareTag("wall1-")) 
+        {
+            transform.rotation = initialRotation; // Przywróć początkową rotację gracza
+            rb.velocity = Vector2.zero; // Zatrzymaj prędkość gracza
+        }
+
     }
 }
+
+
+
+
+
+
+
