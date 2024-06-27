@@ -23,6 +23,7 @@ TagManager:
   - TurnTrigger
   - wall5
   - wall6
+  - Cant
   layers:
   - Default
   - TransparentFX
