@@ -9,8 +9,7 @@ public class flyNew : MonoBehaviour
     private Rigidbody2D flyRigidbody; // Reference to the fly's Rigidbody2D
     public string webbedFlyBool = "flyCatch"; // The boolean parameter to change the fly animation
     public float fallSpeed = 1.0f; // The speed at which the fly falls downwards
-    public Image webBar; // Reference to the web bar image
-    public float webBarIncreaseAmount = 0.1f;
+   
 
     private bool isWebbed = false; // Flag to check if the fly is webbed
 
@@ -32,10 +31,7 @@ public class flyNew : MonoBehaviour
             Debug.LogError("Rigidbody2D is not found on the fly object.");
         }
 
-        if (webBar == null)
-        {
-            Debug.LogError("Web bar image is not assigned.");
-        }
+      
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -74,15 +70,6 @@ public class flyNew : MonoBehaviour
             isWebbed = false; // Reset the flag
         }
 
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            if (webBar != null)
-            {
-                webBar.fillAmount = Mathf.Clamp(webBar.fillAmount + webBarIncreaseAmount, 0, 1);
-            }
-
-            // Destroy the fly game object
-            Destroy(gameObject);
-        }
+       
     }
 }

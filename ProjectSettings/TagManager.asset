@@ -3,31 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Ground
-  - fly
-  - wall
-  - ceiling
-  - throwWeb
-  - wall1
-  - wall3
-  - wall4
-  - ceilingCollider
-  - fly2
-  - Square
-  - Audio
-  - obstacle
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - ground
+  - 
   - Water
   - UI
-  - spider
-  - floor
-  - throwWeb
-  - obstacle
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -53,13 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: ground
-    uniqueID: 40397129
-    locked: 0
-  - name: player
-    uniqueID: 2298974731
-    locked: 0
-  - name: webbar
-    uniqueID: 3963309167
     locked: 0

@@ -15,10 +15,9 @@ public class PointAndShoot : MonoBehaviour
 
     public float webSpeed = 60.0f;
     public float maxWeb = 100f;
-    public float webUsagePerShot = 10f; // Amount of web used per shot
+    public float webUsagePerShot = 10f;
     private Vector3 target;
     private float web;
-    private float lerpSpeed;
 
     private void Start()
     {
@@ -72,22 +71,23 @@ public class PointAndShoot : MonoBehaviour
     public void IncreaseWeb(float amount)
     {
         web += amount;
-        web = Mathf.Clamp(web, 0, maxWeb); // Ensure web does not exceed maxWeb
+        web = Mathf.Clamp(web, 0, maxWeb);
         UpdateWebUI();
     }
+
+}
+public class Web : MonoBehaviour
+{
+    public PointAndShoot pointAndShoot;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("fly2"))
         {
-            web = maxWeb; // Set web to maximum value
-            UpdateWebUI();
+            Debug.Log("Trafiono w muchê!");
+            pointAndShoot.IncreaseWeb(30f); // Zwiêksz web o 20
+
         }
     }
 }
-
-public class Web : MonoBehaviour
-{
-    public PointAndShoot pointAndShoot;
-}
-
 
