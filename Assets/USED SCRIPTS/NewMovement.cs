@@ -12,7 +12,7 @@ public class NewMovement : MonoBehaviour
     public Collider2D triggerToDisableAtStart2;
     public Collider2D triggerToEnableAtStart3;
     public Collider2D triggerToDisableAtStart3;
-     private Vector2 movementDirection;
+    
 
     private Quaternion initialRotation; // Początkowa rotacja gracza
 
@@ -49,7 +49,7 @@ public class NewMovement : MonoBehaviour
         else if (other == triggerToDisableAtStart)
         {
             triggerToDisableAtStart.enabled = true;
-            transform.Rotate(Vector3.forward * 90f);
+            transform.Rotate(Vector3.forward *90f);
         }
         if (other == triggerToEnableAtStart2)
         {

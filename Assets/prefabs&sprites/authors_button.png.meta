@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 5411e38e6a824274ea885fca61ce508c
+guid: c57eda8eec4f6ae4c8ba5bd735056566
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3500759553075992606
-    second: start_button_0
+      213: -7948771232314556772
+    second: authors_button_0
   - first:
-      213: -4029351698569776409
-    second: start_button_1
+      213: -7899627383258466880
+    second: authors_button_1
   - first:
-      213: -6145263786166491265
-    second: start_button_2
+      213: -5957015904946701077
+    second: authors_button_2
+  - first:
+      213: 316148272570645221
+    second: authors_button_3
+  - first:
+      213: -2754487162868713534
+    second: authors_button_4
+  - first:
+      213: -5254620457328427605
+    second: authors_button_5
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -104,22 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: start_button_0
+      name: authors_button_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 500
+        width: 685
         height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2e7a9dafbbdca6fc0800000000000000
-      internalID: -3500759553075992606
+      spriteID: 364fe0d59aaac4349bc18e2c53c0f9c7
+      internalID: 811123862
       vertices: []
       indices: 
       edges: []
@@ -127,7 +136,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b58b609342f43ad42ba3233f1d284f37
+    spriteID: 7ed2bcd6adc2f134fbab08b6177abf0e
     internalID: 0
     vertices: []
     indices: 
@@ -135,9 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      start_button_0: -3500759553075992606
-      start_button_1: -4029351698569776409
-      start_button_2: -6145263786166491265
+      authors_button_0: 811123862
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
