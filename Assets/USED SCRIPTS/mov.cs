@@ -33,37 +33,36 @@ public class mov : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         // Jeœli gracz minie trigger 1 i nie zosta³ jeszcze aktywowany, obróæ postaæ
-        if (other.CompareTag("wall1") )
+        if (other.CompareTag("wall1"))
         {
-           
+
             transform.Rotate(Vector3.forward * 90f);
         }
         // Jeœli gracz minie trigger 2 i nie zosta³ jeszcze aktywowany, obróæ postaæ
-        else if (other.CompareTag("wall2") )
+        else if (other.CompareTag("wall2"))
         {
-            
+
             transform.Rotate(Vector3.forward * 90f);
         }
         // Jeœli gracz minie trigger 3 i nie zosta³ jeszcze aktywowany, obróæ postaæ
-        else if (other.CompareTag("Trigger3") )
+        else if (other.CompareTag("wall3"))
         {
-           
+
             transform.Rotate(Vector3.forward * 90f);
         }
-        else if (other.CompareTag("Wall"))
+        else if (other.CompareTag("wall4"))
         {
             transform.Rotate(Vector3.forward * -90f);
         }
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        // Jeœli gracz opuszcza kolider "wall", przywróæ pocz¹tkow¹ rotacjê gracza
-        if (other.CompareTag("Wall"))
+        else if (other.CompareTag("Ground"))
         {
             transform.rotation = initialRotation; // Przywróæ pocz¹tkow¹ rotacjê gracza
             rb.velocity = Vector2.zero; // Zatrzymaj prêdkoœæ gracza
         }
+
     }
+
+
+   
 
 }
