@@ -4349,8 +4349,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   webbedFlyBool: flyCatch
   fallSpeed: 1
-  webBar: {fileID: 7784782}
-  webBarIncreaseAmount: 1
 --- !u!114 &1716067340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4898,6 +4896,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  triggerToDisableAtStart: {fileID: 0}
+  triggerToEnableAtStart: {fileID: 0}
+  triggerToEnableAtStart2: {fileID: 0}
+  triggerToDisableAtStart2: {fileID: 0}
+  triggerToEnableAtStart3: {fileID: 0}
+  triggerToDisableAtStart3: {fileID: 0}
 --- !u!114 &1843045287
 MonoBehaviour:
   m_ObjectHideFlags: 0
