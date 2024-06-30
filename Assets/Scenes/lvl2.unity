@@ -658,7 +658,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337032352}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 29833cfb34bc3464ab42b78053e81b1c, type: 2}
   m_CullingMode: 0
@@ -3745,7 +3745,7 @@ PrefabInstance:
       addedObject: {fileID: 1166794998}
     - targetCorrespondingSourceObject: {fileID: 4301367075392835501, guid: 3e09a7c008c09684b9ca1b0fd11a39d2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1166795009}
+      addedObject: {fileID: 1166795007}
   m_SourcePrefab: {fileID: 100100000, guid: 3e09a7c008c09684b9ca1b0fd11a39d2, type: 3}
 --- !u!1 &1166794996 stripped
 GameObject:
@@ -3961,7 +3961,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1166795009
+--- !u!114 &1166795007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6385,7 +6385,7 @@ Transform:
   m_GameObject: {fileID: 1989716081}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09, y: -4.07, z: 0}
+  m_LocalPosition: {x: -1.83, y: -4.07, z: 0}
   m_LocalScale: {x: 2.5, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6398,7 +6398,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989716081}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 634443763fcabee428fd6010baa697fd, type: 3}
   m_Name: 
