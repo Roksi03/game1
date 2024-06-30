@@ -36,7 +36,7 @@ public class ButtonController : MonoBehaviour
         else
         {
             // Stop animations for both walls
-            wall1Animator.SetBool("Activate", false);
+            wall1Animator.SetBool("Activate", true);
             wall2Animator.SetBool("Activate", true);
         }
     }

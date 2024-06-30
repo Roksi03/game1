@@ -51,16 +51,16 @@ public class leverPulling : MonoBehaviour
 
     void ActionOne()
     {
-        door1Animator.SetBool("Activate", true);
-        door2Animator.SetBool("Activate", true);
+        door1Animator.SetBool("Activate", false);
+        door2Animator.SetBool("Activate", false);
 
         Debug.Log("Action One triggered!");
     }
 
     void ActionTwo()
     {
-        door1Animator.SetBool("Activate", false);
-        door2Animator.SetBool("Activate", false);
+        door1Animator.SetBool("Activate", true);
+        door2Animator.SetBool("Activate", true);
 
         Debug.Log("Action Two triggered!");
     }
