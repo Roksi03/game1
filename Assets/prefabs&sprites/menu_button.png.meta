@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: dbb75d59c45621f42b8d72e00556b6f5
+=======
+guid: 613a6f868cecfd64b906cbaf02a1b294
+>>>>>>> roksi
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -110,10 +114,17 @@ TextureImporter:
       name: menu_button_0
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 141
         y: 180
         width: 316
         height: 132
+=======
+        x: 0
+        y: 0
+        width: 596
+        height: 500
+>>>>>>> roksi
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,8 +132,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 16a9c376aaf815742829c36a64ba1021
       internalID: 397988995
+=======
+      spriteID: d5747c3d582ae314ebd87fc1a606cf60
+      internalID: 567033568
+>>>>>>> roksi
       vertices: []
       indices: 
       edges: []
@@ -130,7 +146,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 46cf172479e71574593c58785c1f421f
+=======
+    spriteID: 12e4f1e76db069b4eab2c77b7de78b58
+>>>>>>> roksi
     internalID: 0
     vertices: []
     indices: 
@@ -138,7 +158,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<< HEAD
       menu_button_0: 397988995
+=======
+      menu_button_0: 567033568
+>>>>>>> roksi
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
