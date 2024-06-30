@@ -24,6 +24,7 @@ TagManager:
   - wall5
   - wall6
   - lever
+  - Button
   layers:
   - Default
   - TransparentFX
