@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/tutorial2.unity
     guid: f7fef9e04afdfc940b9a96bba4664005
   - enabled: 1
+    path: Assets/Scenes/tutorialWin.unity
+    guid: 521952cae3a035041893545fb1bb38b5
+  - enabled: 1
     path: Assets/Scenes/lvl1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -24,8 +27,8 @@ EditorBuildSettings:
     path: Assets/Scenes/lvl3.unity
     guid: 3e331b5d36af4544d88c840bf1b95f0e
   - enabled: 1
-    path: Assets/Scenes/tutorialWin.unity
-    guid: 521952cae3a035041893545fb1bb38b5
+    path: Assets/Scenes/GameWin.unity
+    guid: d9644aa1ba855204da8c47fe8ef8c56f
   - enabled: 1
     path: Assets/Scenes/authors.unity
     guid: 438fdae438faaa34d9edf30c7b7c631d
