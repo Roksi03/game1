@@ -6,6 +6,7 @@ public class mov : MonoBehaviour
 {
     public float moveSpeed = 5f; // Szybkoœæ poruszania siê gracza
     private Rigidbody2D rb;
+    private bool isBlocked;
 
     private Quaternion initialRotation; // Pocz¹tkowa rotacja gracza
 
@@ -61,6 +62,22 @@ public class mov : MonoBehaviour
         }
 
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            isBlocked = true;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            isBlocked = false;
+        }
+    }
+
 
 
    

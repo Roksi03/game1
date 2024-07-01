@@ -25,6 +25,7 @@ TagManager:
   - wall6
   - lever
   - Button
+  - Obstacle
   layers:
   - Default
   - TransparentFX
