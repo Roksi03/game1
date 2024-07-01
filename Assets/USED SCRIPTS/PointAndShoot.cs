@@ -85,7 +85,7 @@ public class Web : MonoBehaviour
         if (other.CompareTag("fly2"))
         {
             Debug.Log("Trafiono w muchê!");
-            pointAndShoot.IncreaseWeb(30f); // Zwiêksz web o 20
+            pointAndShoot.IncreaseWeb(100f); // Zwiêksz web o 20
 
         }
     }
