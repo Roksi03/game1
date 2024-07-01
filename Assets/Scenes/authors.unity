@@ -1119,7 +1119,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "B\u0142a\u017Cej Miziniak-design,music\nKatarzyna Czerwi\u0144ska-graphic
-    2d,animation\nGabriela(Victor)\u017Bak-programmer\nRoksana Kierzek-programmer"
+    2d,animation\nGabriela(Viktor)\u017Bak-programmer\nRoksana Kierzek-programmer"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
