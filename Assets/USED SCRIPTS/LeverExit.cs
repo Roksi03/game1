@@ -27,6 +27,5 @@ public class LeverExit : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
     }
 }
